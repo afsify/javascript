@@ -38,9 +38,9 @@ Instead declare as
 
 ```
 let employee={
-    id:1,
-    name:”John”,
-    salary:50000
+  id:1,
+  name:”John”,
+  salary:50000
 }
 ```
 
