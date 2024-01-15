@@ -5,7 +5,8 @@
 // class will possess.
 
 class Calculator {
-  constructor(num1, num2) {// Constructor used for initializing the class instance
+  constructor(num1, num2) {
+    // Constructor used for initializing the class instance
     // Properties initialized in the constructor
     this.num1 = num1;
     this.num2 = num2;

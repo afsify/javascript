@@ -214,3 +214,10 @@ Below are some of the security best practices to be considered during JavaScript
 
 8. **JavaScript Obfuscation:**
    - Employ obfuscation techniques to convert JavaScript code into a more secure form, preventing various types of attacks.
+
+## Clone the Repository
+
+In the terminal, use the followed command:
+
+```bash
+git clone https://github.com/mhdafs/javascript.git
