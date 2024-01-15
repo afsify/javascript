@@ -217,7 +217,7 @@ Below are some of the security best practices to be considered during JavaScript
 
 ## Clone the Repository
 
-In the terminal, use the followed command:
+In the terminal, use the following command:
 
 ```bash
 git clone https://github.com/mhdafs/javascript.git
