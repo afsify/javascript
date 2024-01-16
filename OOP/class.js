@@ -1,4 +1,4 @@
-// ======================================== CLASS ========================================
+//! ======================================== Class ========================================
 
 // In programming, a class is a blueprint or template for creating objects, encapsulating
 // data and behavior, defining the properties and methods that objects instantiated from the

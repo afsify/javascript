@@ -1,4 +1,4 @@
-// ===================================== INHERITANCE =====================================
+//! ===================================== Inheritance =====================================
 
 // Inheritance is a programming concept that allows a new class (subclass or derived class)
 // to inherit properties and behaviors (attributes and methods) from an existing class

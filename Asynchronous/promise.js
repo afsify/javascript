@@ -1,4 +1,4 @@
-// ======================================== PROMISE ========================================
+//! ======================================== Promise ========================================
 
 // A Promise in JavaScript is an object representing the eventual completion or failure of an
 // asynchronous operation and its resulting value. It is a way to handle asynchronous code
