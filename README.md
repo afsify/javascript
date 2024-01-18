@@ -1,6 +1,8 @@
 # JavaScript
 
-JavaScript is single threaded and synchronous by default. This means that it has a single main thread of execution, and each operation is performed one at a time in a sequential manner. The term "single-threaded" indicates that JavaScript code is executed in a single sequence or order, and each operation is completed before the next one begins.
+JavaScript is single threaded and synchronous by default. This means that it has a single main thread of execution, and each operation is performed one at a time in a sequential manner. The term "single threaded" indicates that JavaScript code is executed in a single sequence or order, and each operation is completed before the next one begins.
+
+The global execution context is the top level or outermost context in which JavaScript code is executed. When a JavaScript program starts running, the global execution context is created, providing a global scope for variables, functions, and other constructs.
 
 **Call Stack:**
 
