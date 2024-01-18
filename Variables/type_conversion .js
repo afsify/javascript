@@ -1,4 +1,21 @@
-//! ===================================== Types of Conversion  =====================================
+//! ===================================== Type Conversion  =====================================
+
+// Type casting, also known as type conversion, refers to the process of converting a value from one
+// data type to another in a programming language. JavaScript is a loosely typed language, meaning
+// that variables can change their data type dynamically during runtime.
+
+//* Implicit type casting (Coercion)
+// occurs automatically when values of different types are used together in an operation or expression.
+{
+  const num = 5;
+  const str = "10";
+
+  const result = num + str; // JavaScript converts `num` to a string before concatenation
+  console.log(result); // Output: '510'
+}
+
+//* Explicit type casting
+// involves manually converting a value from one type to another using built-in functions or methods.
 
 //? Converting to Integer (parseInt()):
 // The parseInt() function is used to parse a string and convert it into an integer. It takes two parameters:
