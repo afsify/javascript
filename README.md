@@ -1,3 +1,24 @@
+# JavaScript
+
+JavaScript is single threaded and synchronous by default. This means that it has a single main thread of execution, and each operation is performed one at a time in a sequential manner. The term "single-threaded" indicates that JavaScript code is executed in a single sequence or order, and each operation is completed before the next one begins.
+
+**Call Stack:**
+
+- The call stack is a data structure that keeps track of function calls in the program.
+- When a function is called, it is added to the top of the call stack. When a function completes, it is       removed from the stack.
+
+**Callback Queue:**
+
+- JavaScript uses a callback queue to manage asynchronous operations and events.
+- Asynchronous tasks, such as timers, network requests, or user interactions, are handled by the browser or runtime environment.
+- When an asynchronous task is complete, its callback function is pushed into the callback queue.
+
+**Event Loop:**
+
+- The event loop constantly checks two main structures: the call stack and the callback queue.
+- If the call stack is empty, the event loop takes the first function from the callback queue and pushes it onto the call stack for execution.
+- This process ensures that asynchronous tasks do not block the main thread and that their associated callback functions are executed when the call stack is clear.
+
 # Best Practices for JavaScript Coding
 
 Below are some of the best practices that can be followed while JavaScript coding in order to make your code cleaner, shorter, and easier to read.
