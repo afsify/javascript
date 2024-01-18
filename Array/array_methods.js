@@ -199,3 +199,17 @@
   console.log(fruits.includes("banana")); // Output: true
   console.log(fruits.includes("grape")); // Output: false
 }
+
+//? from():
+// This method can be used to create a shallow copy of an array.
+{
+  let originalArray = [1, 2, 3, 4, 5];
+  let clonedArray = Array.from(originalArray);
+
+  console.log(clonedArray); // Output: [1, 2, 3, 4, 5]
+
+  // Modifying the original array does not affect the cloned array
+  originalArray.push(6);
+  console.log(originalArray); // Output: [1, 2, 3, 4, 5, 6]
+  console.log(clonedArray); // Output: [1, 2, 3, 4, 5]
+}

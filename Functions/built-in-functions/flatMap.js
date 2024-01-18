@@ -1,4 +1,4 @@
-//! ======================================== flatMap ========================================
+//! ======================================== flatMap() ========================================
 
 // flatMap is a method available for arrays that allows you to map each element using
 // a function and then flatten the result.

@@ -1,4 +1,4 @@
-//! ======================================== eval ========================================
+//! ======================================== eval() ========================================
 
 // It is a global function that evaluates a string as if it were JavaScript code and executes it.
 // While eval() can be powerful, it's generally not recommended for security reasons, as it can
