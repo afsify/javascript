@@ -1,6 +1,6 @@
 //! ======================================== Array Methods ========================================
 
-//? push:
+//? push():
 // Adds one or more elements to the end of an array.
 {
   let fruits = ["apple", "orange"];
@@ -8,7 +8,7 @@
   console.log(fruits); // Output: ['apple', 'orange', 'banana']
 }
 
-//? pop:
+//? pop():
 // Removes the last element from the end of an array.
 {
   let fruits = ["apple", "orange", "banana"];
@@ -17,7 +17,7 @@
   console.log(fruits); // Output: ['apple', 'orange']
 }
 
-//? shift:
+//? shift():
 // Removes the first element from the beginning of an array.
 {
   let fruits = ["apple", "orange", "banana"];
@@ -26,7 +26,7 @@
   console.log(fruits); // Output: ['orange', 'banana']
 }
 
-//? unshift:
+//? unshift():
 // Adds one or more elements to the beginning of an array.
 {
   let fruits = ["orange", "banana"];
@@ -34,7 +34,7 @@
   console.log(fruits); // Output: ['apple', 'orange', 'banana']
 }
 
-//? concat:
+//? concat():
 // Combines two or more arrays.
 {
   let fruits = ["apple", "orange"];
@@ -43,7 +43,7 @@
   console.log(combinedFruits); // Output: ['apple', 'orange', 'banana', 'grape']
 }
 
-//? slice:
+//? slice():
 // Returns a portion of an array.
 {
   let fruits = ["apple", "orange", "banana", "grape"];
@@ -51,7 +51,7 @@
   console.log(citrusFruits); // Output: ['orange', 'banana']
 }
 
-//? indexOf:
+//? indexOf():
 // Returns the index of the first occurrence of a specified element in an array.
 {
   let fruits = ["apple", "orange", "banana", "grape"];
@@ -68,7 +68,7 @@
   console.log(orangeIndex); // Output: -1 (not found, starting search from index 2)
 }
 
-//? lastIndexOf:
+//? lastIndexOf():
 // Returns the index of its last occurrence of a specified element within an array.
 {
   let fruits = ["apple", "orange", "banana", "orange"];
@@ -84,7 +84,7 @@
   console.log(orangeIndex); // Output: 1 (found, searching backward from index 2)
 }
 
-//? forEach:
+//? forEach():
 // Executes a provided function once for each array element.
 {
   let numbers = [1, 2, 3];
@@ -97,7 +97,7 @@
   // 6
 }
 
-//? join:
+//? join():
 // Joins all elements of an array into a string.
 {
   let fruits = ["apple", "orange", "banana"];
@@ -105,7 +105,7 @@
   console.log(fruitString); // Output: 'apple, orange, banana'
 }
 
-//? reverse:
+//? reverse():
 // Reverses the elements of an array.
 {
   let numbers = [1, 2, 3];
@@ -113,7 +113,7 @@
   console.log(reversedNumbers); // Output: [3, 2, 1]
 }
 
-//? sort:
+//? sort():
 // Sorts the elements of an array.
 {
   let fruits = ["banana", "apple", "orange"];
@@ -121,7 +121,7 @@
   console.log(sortedFruits); // Output: ['apple', 'banana', 'orange']
 }
 
-//? filter:
+//? filter():
 // Creates a new array with elements that pass a test specified by a function.
 {
   let numbers = [1, 2, 3, 4, 5];
@@ -131,7 +131,7 @@
   console.log(evenNumbers); // Output: [2, 4]
 }
 
-//? map:
+//? map():
 // Creates a new array with the results of calling a provided function on every
 // element in the array.
 {
@@ -142,7 +142,7 @@
   console.log(squaredNumbers); // Output: [1, 4, 9]
 }
 
-//? reduce:
+//? reduce():
 // Applies a function against an accumulator and each element in the array
 // (from left to right) to reduce it to a single value.
 {
@@ -153,7 +153,7 @@
   console.log(sum); // Output: 10
 }
 
-//? splice:
+//? splice():
 // Changes the contents of an array by removing or replacing existing elements
 // and/or adding new elements in place.
 {
@@ -162,7 +162,7 @@
   console.log(numbers); // Output: [1, 2, 6, 7, 4, 5]
 }
 
-//? every:
+//? every():
 // Tests whether all elements in the array pass the provided function.
 {
   let numbers = [2, 4, 6, 8];
@@ -172,7 +172,7 @@
   console.log(allEven); // Output: true
 }
 
-//? some:
+//? some():
 // Tests whether at least one element in the array passes the provided function.
 {
   let numbers = [1, 3, 5, 6];
@@ -182,7 +182,7 @@
   console.log(hasEven); // Output: true
 }
 
-//? find:
+//? find():
 // Returns the first element in the array that satisfies the provided testing function.
 {
   let numbers = [5, 10, 15, 20];
@@ -190,4 +190,12 @@
     return num > 12;
   });
   console.log(foundNumber); // Output: 15
+}
+
+//? includes():
+// Checks if an array includes a specific element and returns a boolean.
+{
+  let fruits = ["apple", "banana", "orange"];
+  console.log(fruits.includes("banana")); // Output: true
+  console.log(fruits.includes("grape")); // Output: false
 }
