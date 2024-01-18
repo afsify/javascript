@@ -1,6 +1,6 @@
 //! ===================================== Async/Await =====================================
 
-// async Function:
+//? async Function:
 // The async keyword is used before a function declaration.
 // It makes the function asynchronous, allowing the use of await inside it.
 // Async functions always return a Promise.
@@ -9,7 +9,7 @@ async function myAsyncFunction() {
   return "Hello, this is asynchronous!";
 }
 
-// await Operator:
+//? await Operator:
 // The await keyword is used inside an async function to wait for a Promise to resolve.
 // It can only be used inside an async function.
 // It makes asynchronous code look and behave more like synchronous code.
