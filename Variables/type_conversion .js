@@ -1,4 +1,4 @@
-//! ===================================== Type Conversion  =====================================
+//! ===================================== Type Conversion =====================================
 
 // Type casting, also known as type conversion, refers to the process of converting a value from one
 // data type to another in a programming language. JavaScript is a loosely typed language, meaning

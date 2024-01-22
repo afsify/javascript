@@ -47,7 +47,8 @@ fetchData()
 
 // Promise.reject(): This method returns a rejected promise with a given reason.
 
-// Promise.all(): This method takes an array of promises and returns a single promise
+//? Promise.all():
+// This method takes an array of promises and returns a single promise
 // that resolves when all the promises in the array have resolved.
 {
   const promises = [promise1, promise2, promise3];
@@ -60,11 +61,26 @@ fetchData()
     });
 }
 
-// Promise.race(): This method takes an array of promises and returns a single promise
+//? Promise.race():
+// This method takes an array of promises and returns a single promise
 // that resolves or rejects as soon as one of the promises in the array resolves or rejects.
 {
   const promises = [promise1, promise2, promise3];
   Promise.race(promises)
+    .then((firstResult) => {
+      // Handle the result of the first promise that resolves
+    })
+    .catch((firstError) => {
+      // Handle the error of the first promise that rejects
+    });
+}
+
+//? Promise.any():
+// Returns a new promise as soon as any of the promises in the iterable resolves.
+// If all promises are rejected, it rejects with an AggregateError containing all the rejection reasons.
+{
+  const promises = [promise1, promise2, promise3];
+  Promise.any(promises)
     .then((firstResult) => {
       // Handle the result of the first promise that resolves
     })

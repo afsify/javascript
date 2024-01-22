@@ -9,7 +9,7 @@
 // The prototype object can have its own properties and methods.
 // Objects inherit properties and methods from their prototype.
 
-//? prototype Property:
+//? Prototype Property:
 // Every function in JavaScript has a special property called prototype.
 // This property is used to attach properties and methods that will be shared by all instances
 // created using that constructor function.
@@ -65,3 +65,7 @@ const protoObj = { prop: "Prototype Property" };
 const newObj = Object.create(protoObj);
 
 console.log(newObj.prop); // Output: Prototype Property
+
+// Prototype pollution is a security vulnerability in JavaScript where an attacker
+// manipulates an object's prototype, introducing or modifying properties that can
+// impact all instances of that object.

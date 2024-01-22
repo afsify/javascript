@@ -7,24 +7,30 @@
 // Without throttling, the function would be called every time the user scrolls, potentially at a very
 // high frequency. Here's why throttling is useful in this context:
 
-// Throttling utility function
+// Throttling function
 function throttle(func, delay) {
-  let lastExecTime = 0;
+  let lastCallTime = 0;
 
-  return function () {
-    const currentTime = Date.now();
+  return function (...args) {
+    const currentTime = new Date().getTime();
 
-    if (currentTime - lastExecTime > delay) {
-      func.apply(this, arguments);
-      lastExecTime = currentTime;
+    // Check if enough time has passed since the last call
+    if (currentTime - lastCallTime >= delay) {
+      // Call the original function
+      func.apply(this, args);
+
+      // Update the last call time
+      lastCallTime = currentTime;
     }
   };
 }
 
-// Throttled function for scroll event
-const throttledScrollHandler = throttle(function () {
-  console.log("Scrolled! (throttled)");
-}, 300);
+// Example usage:
+const throttledFunction = throttle(function () {
+  console.log("Function is being called!");
+}, 1000); // Allow the function to be called at most once every 1000 milliseconds (1 second)
 
-// Applying the throttled function to the scroll event
-window.addEventListener("scroll", throttledScrollHandler);
+// Call the throttled function multiple times
+throttledFunction(); // This call will execute the function
+setTimeout(() => throttledFunction(), 500); // This call will be ignored (within the throttling interval)
+setTimeout(() => throttledFunction(), 1200); // This call will execute the function after the throttling interval
