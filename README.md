@@ -21,7 +21,7 @@ The global execution context is the top level or outermost context in which Java
 - If the call stack is empty, the event loop takes the first function from the callback queue and pushes it onto the call stack for execution.
 - This process ensures that asynchronous tasks do not block the main thread and that their associated callback functions are executed when the call stack is clear.
 
-# Best Practices for JavaScript Coding
+## Best Practices for JavaScript Coding
 
 Below are some of the best practices that can be followed while JavaScript coding in order to make your code cleaner, shorter, and easier to read.
 
@@ -29,7 +29,7 @@ Below are some of the best practices that can be followed while JavaScript codin
 
 JavaScript statements do not strictly require semicolons at the end, but it is always a good practice to end them with a semicolon.
 
-```
+```JavaScript
 let x = 5;
 console.log(x);
 ```
@@ -38,7 +38,7 @@ console.log(x);
 
 Use meaningful names for variables. For boolean variables, consider adding 'is' at the beginning, such as `isComplete`, `isLoaded`, etc.
 
-```
+```JavaScript
 let isComplete = true;
 let isLoaded = false;
 ```
@@ -49,17 +49,17 @@ Avoid redundancy in naming objects and their properties. For example, consider a
 
 Avoid declaring
 
-```
+```JavaScript
 let employee = {
-	employeeId:1,
-	employeeName:”John”,
-	employeeSalary:50000
+  employeeId:1,
+  employeeName:”John”,
+  employeeSalary:50000
 }
 ```
 
 Instead declare as
 
-```
+```JavaScript
 let employee={
   id:1,
   name:”John”,
@@ -73,7 +73,7 @@ let employee={
 - Use `let` for variable declarations that will change their value over time and to have block scope.
 - Use `const` for variables that don't need to be reassigned.
 
-```
+```JavaScript
 console.log(hoistedVar); // Output: undefined
 var hoistedVar = "I can be hoisted!";
 console.log(hoistedVar); // Output: I can be hoisted!
@@ -87,7 +87,7 @@ Avoid global declaration of variables for security concerns and optimal memory u
 
 Use '===' instead of '==' for strict comparisons.
 
-```
+```JavaScript
 let num = 5;
 if (num === "5") {
   console.log("Strict comparison");
@@ -100,7 +100,7 @@ if (num === "5") {
 
 Add comments wherever necessary for documentation purposes, but avoid commenting out code.
 
-```
+```JavaScript
 // This is a single-line comment
 
 /*
@@ -113,7 +113,7 @@ Add comments wherever necessary for documentation purposes, but avoid commenting
 
 Use arrow functions in place of function expressions whenever you want to preserve the lexical value of 'this'. Arrow functions have a shorter syntax, helping to keep the code clean, shorter, and more readable.
 
-```
+```JavaScript
 let add = (a, b) => a + b;
 ```
 
@@ -121,7 +121,7 @@ let add = (a, b) => a + b;
 
 Use template literals to construct strings with special characters, to concatenate strings and values, and to preserve newlines.
 
-```
+```JavaScript
 let name = "John";
 let greeting = `Hello, ${name}!`;
 ```
@@ -130,7 +130,7 @@ let greeting = `Hello, ${name}!`;
 
 Use destructuring syntax to extract values from objects and arrays, reducing the number of lines of code and not modifying the original object/array values.
 
-```
+```JavaScript
 let person = { firstName: "John", lastName: "Doe" };
 let { firstName, lastName } = person;
 ```
@@ -139,7 +139,7 @@ let { firstName, lastName } = person;
 
 Use the rest operator when passing an indefinite amount of arguments to a function.
 
-```
+```JavaScript
 function sum(...numbers) {
   return numbers.reduce((acc, num) => acc + num, 0);
 }
@@ -149,7 +149,7 @@ function sum(...numbers) {
 
 Use the spread operator when passing a set of variables to a function from an array and when concatenating arrays.
 
-```
+```JavaScript
 let arr1 = [1, 2, 3];
 let arr2 = [...arr1, 4, 5];
 ```
@@ -158,7 +158,7 @@ let arr2 = [...arr1, 4, 5];
 
 Use async-await instead of promises or callbacks to keep the code short, clean, and more readable.
 
-```
+```JavaScript
 async function fetchData() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -181,7 +181,7 @@ async function processData() {
 
 Use JavaScript classes to write cleaner and simpler code.
 
-```
+```JavaScript
 class Dog {
   constructor(name, age) {
     this.name = name;
@@ -198,14 +198,14 @@ class Dog {
 
 Use the for..of loop instead of traditional for loops to iterate over the values of an array, making the code cleaner and shorter.
 
-```
+```JavaScript
 let numbers = [1, 2, 3, 4, 5];
 for (let number of numbers) {
   console.log(number);
 }
 ```
 
-# JavaScript Security Best Practices
+## JavaScript Security Best Practices
 
 Below are some of the security best practices to be considered during JavaScript coding in order to safeguard the application from different security attacks.
 
@@ -244,3 +244,4 @@ In the terminal, use the following command:
 
 ```bash
 git clone https://github.com/mhdafs/javascript.git
+```
