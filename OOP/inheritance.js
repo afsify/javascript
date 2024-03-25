@@ -27,5 +27,5 @@ class Car extends Vehicle {
   }
 }
 
-let c = new Car("Hundai", "i10", "KA-016447", "Petrol"); // Creating a Car object
+let c = new Car("Hyundai", "i10", "KA-016447", "Petrol"); // Creating a Car object
 c.getDetails();
