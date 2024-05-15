@@ -1,6 +1,6 @@
 //! ======================================== Screen ========================================
 
-// The window.screen object can be written without the window prefix.
+// The window.screen object contains information about the user's screen.
 
 screen.width
 screen.height
