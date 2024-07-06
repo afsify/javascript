@@ -74,6 +74,7 @@ fetchData()
       // Handle the error of the first promise that rejects
     });
 }
+// Useful when you need the result of the fastest promise, regardless of whether it resolves or rejects.
 
 //? Promise.any():
 // Returns a new promise as soon as any of the promises in the iterable resolves.
@@ -88,3 +89,5 @@ fetchData()
       // Handle the error of the first promise that rejects
     });
 }
+// Useful when you need the result of the first successfully resolved promise,
+// ignoring rejections until there are no more promises left.
