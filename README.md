@@ -243,5 +243,5 @@ Below are some of the security best practices to be considered during JavaScript
 In the terminal, use the following command:
 
 ```bash
-git clone https://github.com/mhdafs/javascript.git
+git clone https://github.com/afsify/javascript.git
 ```
