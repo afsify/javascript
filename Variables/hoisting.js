@@ -1,4 +1,4 @@
-//! ======================================== Hoisting ========================================
+//! ======================================= Hoisting =======================================
 
 // Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top
 // of their respective scopes during the compilation phase, allowing them to be used before they are
