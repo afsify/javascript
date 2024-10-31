@@ -1,4 +1,4 @@
-//! ======================================== Shadowing ========================================
+//! ========================================= Shadowing =========================================
 
 // When a variable declared within a certain scope has the same name as a variable in an outer scope.
 // The inner variable "shadows" or hides the outer variable of the same name, making the outer variable
