@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+    <script src="./dom.js" defer></script>
+  </head>
+  <body>
+    <p id="paragraph">Old Text</p>
+    <button onclick="updateText()">Update Text</button>
+    <hr />
+    <h1 id="heading">Style Me</h1>
+    <button onclick="styleHeading()">Style</button>
+    <hr />
+    <button id="clickMeBtn">Click Me</button>
+    <hr />
+    <div id="toRemove">This will be removed</div>
+    <button onclick="remove()">Remove</button>
+    <hr />
+    <div id="parentDiv">
+      <p id="oldElement">Small Text</p>
+      <button onclick="replaceText()">Replace</button>
+    </div>
+    <hr />
+    <div>
+      <p id="child">I am the child element.</p>
+      <button onclick="changeBg()">Change BG of Parent</button>
+    </div>
+  </body>
+</html>
