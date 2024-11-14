@@ -34,3 +34,4 @@ proxyObject.age = 31; // Outputs: "Setting property: age to 31"
 
 // "trap" is a function that allows you to intercept and customize the behavior
 // of fundamental operations on an object.
+
