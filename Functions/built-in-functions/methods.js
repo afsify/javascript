@@ -5,7 +5,7 @@
 // individual arguments provided as separate parameters.
 {
   function greet(name) {
-    console.log(`Hello, ${name}! I am ${this.job}.`);
+    console.log(`Hello, I am ${name}! ${this.job}.`);
   }
 
   const person = { job: "developer" };
@@ -18,7 +18,7 @@
 // The apply method is similar to call, but it takes arguments as an array or an array-like object.
 {
   function greet(name, age) {
-    console.log(`Hello, ${name}! I am ${this.job} and ${age} years old.`);
+    console.log(`Hello, I am ${name}! ${this.job} and ${age} years old.`);
   }
 
   const person = { job: "developer" };
@@ -33,7 +33,7 @@
 // a new function that can be called later.
 {
   function greet(name, age) {
-    console.log(`Hello, ${name}! I am ${this.job} and ${age} years old.`);
+    console.log(`Hello, I am ${name}! ${this.job} and ${age} years old.`);
   }
 
   const person = { job: "developer" };
